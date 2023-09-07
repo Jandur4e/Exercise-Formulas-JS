@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/logo.jpg" />
+    <title>homework</title>
+</head>
+<body>
+    <ol class="order-list">
+    <div class="box">
+        <button class="toggle-btn">Exercise 1</button>
+        <li>Write a function that calculates the square of the inputed number
+            <div class="exercise" id="div1">
+                <div class="exercise-show">
+                    <label for="inputnumber">Input whole number for <q>a</q></label>
+                    <input type="number" id="inputnumber" placeholder="Input number" value="">
+                    <button class="submit" onclick="findSquare()">Result</button>
+                    <p id="totex1"></p>
+                </div>
+            </div>
+        </li>
+    </div>
+    <div class="box">
+        <button class="toggle-btn">Exercise 2</button>
+        <li>Write a function that calculates the area of the rectangle of inputed number
+            <div class="exercise" id="div2">
+                <div class="exercise-show">
+                    <label for="inputnumber1">Input whole number for <q>a</q></label>
+                    <input type="number" id="inputnumber1" placeholder="Input number" value="">
+                    <label for="inputnumber2">Input whole number for <q>b</q></label>
+                    <input type="number" id="inputnumber2" placeholder="Input number" value="">
+                    <button class="submit" onclick="rectangleArea()">Result</button>
+                    <p id="totex2"></p>
+                </div>
+            </div>
+        </li>
+    </div>
+    <div class="box">
+        <button class="toggle-btn">Exercise 3</button>
+        <li>Write a function that will tell us how many character exist in a given string
+            <div class="exercise" id="div3">
+                <div class="exercise-show">
+                    <label for="inputnumber3">Input whole number for <q>a</q></label>
+                    <input type="number" id="inputnumber3" placeholder="Input number" value="">
+                    <button class="submit" onclick="circleValues()">Result</button>
+                    <p id="totex3"></p>
+                </div>
+            </div>
+        </li>
+    </div>
+    <div class="box">
+        <button class="toggle-btn">Exercise 4</button>
+        <li>Write a function that will tell us how many character exist in a given string
+            <div class="exercise" id="div4">
+                <div class="exercise-show">
+                    <label for="inputText">Input some text</label>
+                    <input type="text" id="inputText" pattern="[a-z]*" placeholder="Input some text" value="">
+                    <button class="submit" onclick="charCount()">Result</button>
+                    <p id="totex4"></p>
+                </div>
+            </div>
+        </li>
+    </div>
+    <div class="box">
+        <button class="toggle-btn">Exercise 5</button>
+        <li>Write a function that will check if a number is even
+            <div class="exercise" id="div5">
+                <div class="exercise-show">
+                    <label for="inputnumber4">Input whole number for <q>x</q></label>
+                    <input type="number" id="inputnumber4" placeholder="Input number" value="">
+                    <button class="submit" onclick="isEven()">Result</button>
+                    <p id="totex5"></p>
+                </div>
+            </div>
+        </li>
+    </div>
+    <div class="box">
+        <button class="toggle-btn">Exercise 6</button>
+        <li>Write a function that will calculate the dog age from human years
+            <div class="exercise" id="div6">
+                <div class="exercise-show">
+                    <label for="inputnumber5">Input years</label>
+                    <input type="number" id="inputnumber5" placeholder="Input number" value="">
+                    <button class="submit" onclick="calculateDogAge()">Result</button>
+                    <p id="totex6"></p>
+                </div>
+            </div>
+        </li>
+    </div>
+    <div class="box">
+        <button class="toggle-btn">Exercise 7</button>
+        <li>Write a function that will calculate an animal age in their years by
+            taking human years and a conversion rate as a multiplier value, and animal name
+            <div class="exercise" id="div7">
+                <div class="exercise-show">
+                    <label for="inputText1">Input animal example <q>cat, bear, aligator, bird</q></label>
+                    <input type="text" id="inputText1" placeholder="Input text" value="">
+                    <label for="inputnumber6">Input years of doge</label>
+                    <input type="number" id="inputnumber6" placeholder="Input number" value="">
+                    <button class="submit" onclick="calculateAniamalAge()">Result</button>
+                    <p id="totex7"></p>
+                </div>
+            </div>
+        </li>
+    </div>
+    <div class="box">
+        <button class="toggle-btn">Exercise 8</button>
+        <li>Write a function that will calculate how much money you need for the rest of your life
+            by inputing your current age and how much money you spend per day, and assuming that people will live
+            100years on average
+            <div class="exercise" id="div8">
+                <div class="exercise-show">
+                    <label for="inputnumber7">Input age</label>
+                    <input type="number" id="inputnumber7" placeholder="Input number" value="">
+                    <label for="inputnumber8">Input money spend per day</label>
+                    <input type="number" id="inputnumber8" placeholder="Input number" value="">
+                    <button class="submit" onclick="calculateSupply()">Result</button>
+                    <p id="totex8"></p>
+                </div>
+            </div>
+        </li>
+    </div>
+    <div class="box">
+        <button class="toggle-btn">Exercise 9</button>
+        <li>Write a function called squareNumber that will take one argument (a number), square that number, and return the result. 
+        It should also log a string like "The result of squaring the number 3 is 9.
+            <div class="exercise" id="div9">
+                <div class="exercise-show">
+                    <label for="inputnumber9">Input whole number</label>
+                    <input type="number" id="inputnumber9" placeholder="Input number" value="">
+                    <button class="submit" onclick="squareNumber()">Result</button>
+                    <p id="totex9"></p>
+                </div>
+            </div>
+        </li>
+    </div>
+    <div class="box">
+        <button class="toggle-btn">Exercise 10</button>
+        <li>Write a function called halfNumber that will take one argument (a number), divide it by 2, and return the result. 
+            It should also log a string like <q>Half of 5 is 2.5</q>.
+            <div class="exercise" id="div10">
+                <div class="exercise-show">
+                    <label for="inputnumber10">Input whole number</label>
+                    <input type="number" id="inputnumber10" placeholder="Input number" value="">
+                    <button class="submit" onclick="halfNumber()">Result</button>
+                    <p id="totex10"></p>
+                </div>
+            </div>
+        </li>
+    </div>
+    <div class="box">
+        <button class="toggle-btn">Exercise 11</button>
+        <li>Write a function called percentOf that will take two numbers, figure out what percent the first number represents 
+            of the second number, and return the result. It should also log a string like "2 is 50% of 4."
+            Round the result so there are only two digits after the decimal.
+            <div class="exercise" id="div11">
+                <div class="exercise-show">
+                    <label for="inputnumber11">Input whole number for <q>x</q></label>
+                    <input type="number" id="inputnumber11" placeholder="Input number" value="">
+                    <label for="inputnumber12">Input whole number for <q>y</q></label>
+                    <input type="number" id="inputnumber12" placeholder="Input number" value="">
+                    <button class="submit" onclick="percentOf()">Result</button>
+                    <p id="totex11"></p>
+                </div>
+            </div>
+        </li>
+    </div>
+    <div class="box">
+        <button class="toggle-btn">Exercise 12</button>
+        <li>Write a function that will take one argument (a number) and perform the following operations, using the functions 
+            you wrote earlier:
+            <ol>
+                <li>Take half of the number and store the result.</li>
+                <li>Square the result of #1 and store that result.</li>
+                <li>Calculate the area of a circle with the result of #2 as the radius.</li>
+                <li>Calculate what percentage that area is of the squared result (#3).</li>
+                <li>Log the last calculation.</li>
+            </ol>
+            <div class="exercise" id="div12">
+                <div class="exercise-show">
+                    <label for="inputnumber13">Input whole number for <q>a</q></label>
+                    <input type="number" id="inputnumber13" placeholder="Input number" value="">
+                    <button class="submit" onclick="complexMath()">Result</button>
+                    <p id="totex12"></p>
+                </div>
+            </div>
+        </li>
+    </div>
+    <div class="box">
+        <button class="toggle-btn">Exercise 13</button>
+        <li>Create a function called DrEvil. It should take a single argument, an amount, and return '<amount> dollars', 
+            except it will add '(pinky)' at the end if the amount is greater than 1 million. 
+            <div class="exercise" id="div13">
+                <div class="exercise-show">
+                    <label for="inputnumber14">Input amount</label>
+                    <input type="number" id="inputnumber14" placeholder="Input number" value="">
+                    <button class="submit" onclick="DrEvil()">Result</button>
+                    <p id="totex13"></p>
+                </div>
+            </div>
+        </li>
+    </div>
+    <div class="box">
+        <button class="toggle-btn">Exercise 14</button>
+        <li>Write a function named greaterNum that takes 2 arguments, both numbers. returns whichever number is the greater (higher) number.
+            <div class="exercise" id="div14">
+                <div class="exercise-show">
+                    <label for="inputnumber15">Input whole number</label>
+                    <input type="number" id="inputnumber15" placeholder="Input number" value="">
+                    <label for="inputnumber16">Input whole number</label>
+                    <input type="number" id="inputnumber16" placeholder="Input number" value="">
+                    <button class="submit" onclick="greaterNum()">Result</button>
+                    <p id="totex14"></p>
+                </div>
+            </div>
+        </li>
+    </div>
+    <div class="box">
+        <button class="toggle-btn">Exercise 15</button>
+        <li>Write a function named helloWorld that takes 1 argument, and language codes like ("es", "de", "en", "fr") and returns
+            the stirng "Hello, World" in that language. 
+            <div class="exercise" id="div15">
+                <div class="exercise-show">
+                    <label for="inputText2">Input language example <q>en, fr, es, mk, sr, de</q></label>
+                    <input type="text" id="inputText2" placeholder="Input language" value="">
+                    <button class="submit" onclick="helloWorld()">Result</button>
+                    <p id="totex15"></p>
+                </div>
+            </div>
+        </li>
+    </div>
+    <div class="box">
+        <button class="toggle-btn">Exercise 16</button>
+        <li>Write a function that tells us what the grade is based on the score. Possible grades 
+            are  "A", "B", "C", "D", or "F", corresponding to having solved correctly above 90%, 80%, 70%, 60%, 50% of the test.            
+            <div class="exercise" id="div16">
+                <div class="exercise-show">
+                    <label for="inputNumber17">Input percent of test</label>
+                    <input type="number" id="inputNumber17" placeholder="Input percent whithout %" value="">
+                    <button class="submit" onclick="assignGrade()">Result</button>
+                    <p id="totex16"></p>
+                </div>
+            </div>
+        </li>
+    </div>
+    </ol>
+    
+    <script>
+        const toggleBtns = document.querySelectorAll(".toggle-btn");
+        toggleBtns.forEach(function(toggleBtn) {
+            toggleBtn.addEventListener("click", function() {
+                const targetId = toggleBtn.textContent.split(" ")[1];
+                const targetDiv = document.getElementById(`div${targetId}`);
+                if (targetDiv.style.display === "none") {
+                    targetDiv.style.display = "block";
+                } else {
+                    targetDiv.style.display = "none";
+                }
+            });
+        });
+    </script>
+    
+    <script src="./js/functions.js"></script>
+</body>
+</html>
